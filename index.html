@@ -16,6 +16,30 @@
             <button class="addBook">add book</button>
         </div>
     </div>
+    <dialog>
+        <form action="#">
+            <label for="title">
+                Title: 
+                <input type="text" name="title" id="title" required>
+            </label>
+            <label for="author">
+                Author: 
+                <input type="text" name="author" id="author" required>
+            </label>
+            <label for="noOfPages">
+                Pages: 
+                <input type="number" name="noOfPages" id="noOfPages" required>
+            </label>
+            <label for="haveRead">
+                Read ? 
+                <input type="checkbox" name="haveRead" id="haveRead" required>
+            </label>
+            <div class="buttonsOfForm">
+                <button type="submit">add book</button>
+                <button class="closeIt">close</button>
+            </div>
+        </form>
+    </dialog>
     <div class="main"></div>
 </body>
 </html>

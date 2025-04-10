@@ -29,5 +29,12 @@ body {
     justify-content: center;
     gap: 3rem;
 
-    
+}
+
+
+dialog form *{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    padding-bottom: 5px;
 }
