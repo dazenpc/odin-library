@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-around;
+    align-items: center;
+
+    & p{
+        margin: 0;
+    }
+
+    & button{
+        font-size: large;
+    }
+}
