@@ -133,11 +133,11 @@ submitButton.addEventListener("click", (e)=>{
 
     // get details and add to card
     const titleReal = document.createElement('p');
-    title.innerText = `Title : ${actualBook.title}`;
+    titleReal.innerText = `Title : ${actualBook.title}`;
     card.appendChild(titleReal);
 
     const authorReal = document.createElement('p');
-    author.innerText = `Author : ${actualBook.author}`;
+    authorReal.innerText = `Author : ${actualBook.author}`;
     card.appendChild(authorReal);
 
     const pages = document.createElement('p');
@@ -145,7 +145,7 @@ submitButton.addEventListener("click", (e)=>{
     card.appendChild(pages);
 
     const haveReadReal = document.createElement('p');
-    haveRead.innerText = `Completed : ${actualBook.haveRead? 'Yes':'No'}`;
+    haveReadReal.innerText = `Completed : ${actualBook.haveRead? 'Yes':'No'}`;
     card.appendChild(haveReadReal);
 
     const removeButton = document.createElement('button');
@@ -180,7 +180,13 @@ submitButton.addEventListener("click", (e)=>{
       displayArea.removeChild(card);
     });
 
-  
+  // clear input
+  title.value = '';
+  author.value = '';
+  noOfPages.value = '';
+  haveRead.checked = false;
+
+
   document.querySelector("dialog").close();
 
 })
