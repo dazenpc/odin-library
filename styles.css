@@ -20,3 +20,14 @@ body {
         font-size: large;
     }
 }
+
+.main{
+    margin: 1rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+
+    
+}
